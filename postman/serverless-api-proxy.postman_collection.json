@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "7b46c88f-e8d9-4db0-b83e-8aa93b84722d",
+		"name": "serverless-api-proxy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "752706"
+	},
+	"item": [
+		{
+			"name": "GET Order by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{api-url}}/orders/3da10338-ff17-4145-a687-22de32e7ec23",
+					"protocol": "https",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"orders",
+						"3da10338-ff17-4145-a687-22de32e7ec23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"TEST-222\",\n    \"quantity\": 123\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{api-url}}/orders/",
+					"protocol": "https",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Stock Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"TEST-222\",\n    \"quantity\": 50000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{api-url}}/stock/",
+					"protocol": "https",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"stock",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Stock Item by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{api-url}}/stock/222",
+					"protocol": "https",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"stock",
+						"222"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

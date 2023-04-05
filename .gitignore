@@ -1,0 +1,4 @@
+internal-orders-domain/cdk-outputs.json
+external-public-api/cdk-outputs.json
+internal-stock-domain/cdk-outputs.json
+.DS_Store
